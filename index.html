@@ -43,15 +43,19 @@
 
     <section id="accueil" class="py-5 bg-dark">
         <div class="container-fluid text-center">
-            <h1 class="text-light">PORTFOLIO DE K</h1>
-            <p class="text-secondary">Un CV made with Bootstrap</p>
+            <h1 class="text-light">Laura SPY</h1>
+            <p class="text-secondary">Mon CV en ligne</p>
             <div class="row align-items-center gx-5">
                 <div class="col">
                     <div class="p-4">
                         <h2 class="text-light">K pour Krystiinal</h2>
                         <h6 class="text-secondary">(ou Karma, sometimes) : deux pseudonymes sur le net.</h3><br>
-                        <p class="text-white">Petit site "vitrine" pour présenter un très court CV réalisé avec Bootstrap. L'idée était de ne pas ajouter de CSS dans le code, seulement avec l'utilisation des "class". </p>
+                        <p class="text-white">Je présente rapidement mes formations en cours et déjà réalisées, mes sites réalisés au cours de mes formations pour présenter mes compétences, mes centres d'intérêts pour me présenter un peu plus en détail.</p>
                         <br>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
                         <h5 class="text-light gx-5">MES FORMATIONS</h5>
                         <table class="table py-5">
                             <thead class="table-dark">
@@ -84,19 +88,68 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="p-3">
-                        <img src="./images/crowley.jpg" class="rounded img-fluid" alt="crowley">
-                        <p class="text-secondary">Fanart de Crowley dans la série Good Omens (interprété par David Tennant)</p>
+                        <!-- <img src="./images/crowley.jpg" class="rounded img-fluid" alt="crowley">
+                        <p class="text-secondary">Fanart de Crowley dans la série Good Omens (interprété par David Tennant)</p> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-5">
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2>Mes réalisations en FRONT-END</h2>
+            <div class="col">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/robert_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                                <h3>Site de Robert</h3>
+                                <p>Création de maquette figma et intégration.</p>
+                                <a href="https://lauraspy.github.io/site_de_robert/" class="stretched-link text-light">Visiter</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/byshah_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                                <h3>Portfolio by Shah</h3>
+                                <p>Essai au grid par intégration de la maquette réalisé par Shah.</p>
+                                <a href="https://lauraspy.github.io/portfoliotemplate_byShah/" class="stretched-link text-light">Visiter</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/voyage_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                                <h3>Site de Voyage en montagne</h3>
+                                <p>Création de la page à partir d'une image de maquette de site web.</p>
+                                <a href="https://codepen.io/krystiinalS/pen/NWmPWeq" class="stretched-link text-light">Visiter</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/noodles_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark" style="background-color: rgba(0, 0, 0, 0.6);">
+                                <h3>Restaurant de Nouilles</h3>
+                                <p>Apprentissage du responsive par intégration d'une maquette réalisée sur figma.</p>
+                                <a href="https://codepen.io/krystiinalS/pen/GReXYpx" class="stretched-link text-light">Visiter</a>
+                            </div>
+                        </div>
+                        <!-- Ajoute d'autres diapositives ici -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-dark text-light">
         <div class="container-fluid text-left px-5">
             <h2>À propos de moi</h2>
             <p>Etudiante développeuse front-end chez Simplon Grand Ouest. J'ai quelques passions qui me dévorent... </p>
@@ -131,55 +184,6 @@
                       <p class="card-text">Maybe not just Netflix... But watching cinema and series is a big passion too. </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-5 bg-dark text-light">
-        <div class="container">
-            <h2>Mes réalisations en FRONT-END</h2>
-            <div class="col">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./images/robert_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
-                                <h3>Site de Robert</h3>
-                                <p>Création de maquette figma et intégration.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/byshah_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
-                                <h3>Portfolio by Shah</h3>
-                                <p>Essai au grid par intégration de la maquette réalisé par Shah.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/voyage_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
-                                <h3>Site de Voyage en montagne</h3>
-                                <p>Création de la page à partir d'une image de maquette de site web.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/noodles_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" style="background-color: rgba(0, 0, 0, 0.6);">
-                                <h3>Restaurant de Nouilles</h3>
-                                <p>Apprentissage du responsive par intégration d'une maquette réalisée sur figma.</p>
-                            </div>
-                        </div>
-                        <!-- Ajoute d'autres diapositives ici -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Précédent</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Suivant</span>
-                    </button>
-                </div>                
             </div>
         </div>
     </section>
