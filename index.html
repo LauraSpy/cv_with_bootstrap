@@ -7,15 +7,15 @@
     <title>CV Laura pour Simplon - avec Bootstrap</title>
     
     </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="accueil" data-bs-smooth-scroll="true">
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light" >
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white text-dark text-opacity-50" >
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./images/K.svg" alt="Logo" width="35" height="auto" class="d-inline-block align-text-center">
+                    <img src="./images/K.svg" alt="Logo" class="d-inline-block w-50 align-text-center">
                 </a>
                 <span>
-                    <img src="./images/fi-br-smartphone.svg" alt="logo" width="20" height="20" class="d-inline-block align-text-center">
+                    <img src="./images/fi-br-smartphone.svg" alt="logo" class="d-inline-block w-75 align-text-center ">
                 </span>
                 <span class="items-center">+ 33 6 56 77 88 99</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,111 +24,161 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#accueil">Accueil</a>
+                            <a class="nav-link active text-opacity-25" href="#accueil">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">À propos</a>
+                            <a class="nav-link text-opacity-25" href="#about">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projets</a>
+                            <a class="nav-link text-opacity-25" href="#projects">Projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link text-opacity-25" href="#interest">Passions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-opacity-25" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section id="accueil" class="py-5 bg-dark">
-        <div class="container-fluid text-center">
-            <h1 class="text-light">Laura SPY</h1>
+    
+    <section id="accueil" class="overflow-x-hidden">
+        <div class="container-fluid align-middle text-center p-5"><br>
+            <img src="./images/crowley.jpg" alt="image profil" class="rounded-circle w-25 p-3">
+            <h1 class="text-dark">Laura SPY</h1>
             <p class="text-secondary">Mon CV en ligne</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-dark overflow-x-hidden">
+        <div class="container-fluid text-center">
             <div class="row align-items-center gx-5">
                 <div class="col">
                     <div class="p-4">
                         <h2 class="text-light">K pour Krystiinal</h2>
                         <h6 class="text-secondary">(ou Karma, sometimes) : deux pseudonymes sur le net.</h3><br>
-                        <p class="text-white">Je présente rapidement mes formations en cours et déjà réalisées, mes sites réalisés au cours de mes formations pour présenter mes compétences, mes centres d'intérêts pour me présenter un peu plus en détail.</p>
+                        <p class="ps-5 text-white fw-light text-start w-75">Je présente rapidement mes formations en cours et déjà réalisées, mes sites réalisés au cours de mes formations pour présenter mes compétences, mes centres d'intérêts pour me présenter un peu plus en détail.</p>
                         <br>
+                        <p class="ps-5 text-secondary w-50 fw-lighter text-opacity-75">Le tout en utilisant seulement Bootstrap, sans modifier le style des class utilisées</p>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="p-3">
+                    <div class="w-75">
                         <h5 class="text-light gx-5">MES FORMATIONS</h5>
-                        <table class="table py-5">
+                        <table class="table">
                             <thead class="table-dark">
                                 <tr>
-                                    <th>Formation</th>
-                                    <th>Ecole</th>
-                                    <th>Date</th>
+                                    <th class="fw-light">Formation</th>
+                                    <th class="fw-light">Ecole</th>
+                                    <th class="fw-light">Date</th>
                                 </tr>
                             </thead>
                             <tbody class="lh-1">
-                                <tr class="table-secondary ">
+                                <tr class="table-dark ">
                                     <td class="fw-bold">BTS SIO OPTION SLAM</td>
                                     <td>ESNC prépa intégrée, Mention Réseaux et Cybersécurité</td>
                                     <td>Rentrée 09/2024</td>
                                 </tr>
-                                <tr class="table-light">
+                                <tr class="table-dark">
                                     <td class="fw-bold">FORMATION POEC DEV FRONT</td>
                                     <td>Simplon Grand Ouest - Rennes</td>
                                     <td>03/06/2024 - 03/09/2024</td>
                                 </tr>
-                                <tr class="table-secondary">
+                                <tr class="table-dark">
                                     <td class="fw-bold">FORMATION DEVELOPPEUR WEB</td>
                                     <td>Votre Formation Pro - <br> Horizon Pro</td>
                                     <td>01/11/2023 - 01/02/2024</td>
                                 </tr>
-                                <tr class="table-light">
+                                <tr class="table-dark">
                                     <td class="fw-bold">MASTER 2 PRODUCTION CINÉMA</td>
                                     <td>Université de Normandie - Caen</td>
                                     <td>2017 - 2019</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- <img src="./images/crowley.jpg" class="rounded img-fluid" alt="crowley">
-                        <p class="text-secondary">Fanart de Crowley dans la série Good Omens (interprété par David Tennant)</p> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-5">
+    <section id="competences" class="py-5 bg-white text-dark overflow-x-hidden">
+        <div class="container-fluid text-center">
+            <h2 class="text-uppercase">Mes Compétences et languages connus</h2>
+            <div class="container p-5 row m-auto">
+                <div class="col">
+                    <h4 class="p-3">Langages connus</h4>
+                    <h5 class="p-2">HTML</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-100 bg-success">Bonne maitrise</div>
+                    </div>
+                    <h5 class="p-2">CSS</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-75">Maitrise correcte</div>
+                    </div>
+                    <h5 class="p-2">Javascript</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-25 bg-warning">Débutante</div>
+                    </div>
+                    <h5 class="p-2">PHP</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-0 bg-danger">Notions</div>
+                    </div>
+                    <h5 class="p-2">MySQL</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar w-0 bg-danger">Notions</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4 class="p-3">Compétences</h4>
+                    <ul class="pt-4 list-group list-group-flush list-group-item-light w-50 m-auto">
+                        <li class="list-group-item text-uppercase text-dark">Ecouter</li>
+                        <li class="list-group-item text-uppercase text-dark">Analyser</li>
+                        <li class="list-group-item text-uppercase text-dark">Organiser</li>
+                        <li class="list-group-item text-uppercase text-dark">Répondre</li>
+                        <li class="list-group-item text-uppercase text-dark">Gérer</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-dark text-light overflow-x-hidden">
         <div class="container">
-            <h2>Mes réalisations en FRONT-END</h2>
+            <h2 class="text-uppercase text-center">Mes réalisations en Front-End</h2><br>
             <div class="col">
                 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/robert_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                            <img src="./images/robert_site.PNG" class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark w-auto">
                                 <h3>Site de Robert</h3>
                                 <p>Création de maquette figma et intégration.</p>
                                 <a href="https://lauraspy.github.io/site_de_robert/" class="stretched-link text-light">Visiter</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/byshah_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                            <img src="./images/byshah_site.PNG" class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark w-auto">
                                 <h3>Portfolio by Shah</h3>
                                 <p>Essai au grid par intégration de la maquette réalisé par Shah.</p>
                                 <a href="https://lauraspy.github.io/portfoliotemplate_byShah/" class="stretched-link text-light">Visiter</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/voyage_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" width="auto" height="200" >
+                            <img src="./images/voyage_site.PNG" class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark w-auto">
                                 <h3>Site de Voyage en montagne</h3>
                                 <p>Création de la page à partir d'une image de maquette de site web.</p>
                                 <a href="https://codepen.io/krystiinalS/pen/NWmPWeq" class="stretched-link text-light">Visiter</a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/noodles_site.PNG" width="auto" height="500"  class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
-                            <div class="carousel-caption rounded bg-dark" style="background-color: rgba(0, 0, 0, 0.6);">
+                            <img src="./images/noodles_site.PNG" class="d-block w-100 object-fit-cover" alt="capture d'écran d'un site">
+                            <div class="carousel-caption rounded bg-dark w-auto">
                                 <h3>Restaurant de Nouilles</h3>
                                 <p>Apprentissage du responsive par intégration d'une maquette réalisée sur figma.</p>
                                 <a href="https://codepen.io/krystiinalS/pen/GReXYpx" class="stretched-link text-light">Visiter</a>
@@ -149,13 +199,13 @@
         </div>
     </section>
 
-    <section id="about" class="py-5 bg-dark text-light">
-        <div class="container-fluid text-left px-5">
-            <h2>À propos de moi</h2>
-            <p>Etudiante développeuse front-end chez Simplon Grand Ouest. J'ai quelques passions qui me dévorent... </p>
-            <div class="row justify-content-around">
+    <section id="interest" class="py-5 bg-white text-dark overflow-x-hidden">
+        <div class="container-fluid text-left px-5 text-center">
+            <h2 class="text-uppercase">À propos de moi</h2>
+            <p class="text-secondary">Etudiante développeuse front-end chez Simplon Grand Ouest. J'ai quelques passions qui me dévorent... </p>
+            <br><div class="row justify-content-around">
                 <div class="card" style="width: 18rem;">
-                    <img src="./images/computer.jpg" width="auto" height="200" class="card-img-top object-fit-cover" alt="working on a computer">
+                    <img src="./images/computer.jpg" class="card-img-top w-auto object-fit-cover" alt="working on a computer">
                     <div class="card-body">
                         <span>
                             <img src="./images/fi-br-comment-heart.svg" alt="logo" class="row align-text-center" width="20" height="20">
@@ -165,7 +215,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="./images/read.jpg" width="auto" height="200" class="card-img-top object-fit-cover" alt="...">
+                    <img src="./images/read.jpg" class="card-img-top w-auto object-fit-cover" alt="...">
                     <div class="card-body">
                         <span>
                             <img src="./images/fi-br-comment-heart.svg" alt="logo" class="row align-text-center" width="20" height="20">
@@ -175,7 +225,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="./images/watch.jpg" width="auto" height="200" class="card-img-top object-fit-cover" alt="watching movies">
+                    <img src="./images/watch.jpg" class="card-img-top w-auto object-fit-cover" alt="watching movies">
                     <div class="card-body">
                         <span>
                             <img src="./images/fi-br-comment-heart.svg" alt="logo" class="row align-text-center" width="20" height="20">
@@ -188,38 +238,34 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 overflow-x-hidden">
         <div class="container-fluid justify-content-center px-5">
-            <div class="row align-items-center">
-                <div class="col">
-                    <span></span>
-                </div>
-                <div class="col">
-                    <h2>Contact <img src="./images/fi-br-following.svg" alt="logo comment"></h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Adresse e-mail</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
-                </div>
-                <div class="col">
-                    <span></span>
+            <div class="container w-50 mx-auto p-2">
+                <div class="row align-items-center bg-dark text-light p-5 rounded">
+                    <div class="col">
+                        <h2>Contact <img src="./images/fi-br-following.svg" alt="logo comment"></h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse e-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary bg-dark text-light text-uppercase">Envoyer</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-secondary text-center py-3">
+    <footer class="bg-dark text-secondary text-center py-3 overflow-x-hidden">
         © 2024 CV BY KRYSTIINAL. MADE WITH <img src="./images/fi-br-hand-holding-heart.svg" alt="logo coeur" width="20" height="20">
     </footer>
     
